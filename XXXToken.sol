@@ -60,7 +60,7 @@ contract XXXToken is Token {
   /// @notice Distributes the presale tokens. Only the owner can do this
   /// @param _receiver The address of the buyer
   /// @param _amount The amount of tokens corresponding to that buyer
-  function distributePresaleTokens(address _receiver, uint256 _amount) external onlyOwner {
+  /*function distributePresaleTokens(address _receiver, uint256 _amount) external onlyOwner {
     require(_receiver != address(0));
     require(_amount > 0 && _amount <= limitPresale);
 
@@ -70,7 +70,7 @@ contract XXXToken is Token {
 
     tokensDistributedPresale = tokensDistributedPresale.add(_amount);
     balances[_receiver] = balances[_receiver].add(tokens);
-  }
+  }*/
 
   /// @notice Distributes the ico tokens in the crowdsale
   /// @param _receiver The address of the buyer
